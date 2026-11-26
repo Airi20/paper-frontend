@@ -21,7 +21,10 @@ function App() {
   const [error, setError] = useState("");
   const [dragging, setDragging] = useState(false);
 
-  const API = import.meta.env.VITE_API_URL || "https://paper-backend-ak99.onrender.com/";
+  const API = (
+  import.meta.env.VITE_API_URL ||
+  "https://paper-backend-ak99.onrender.com"
+).replace(/\/+$/, "");
 
   const selectFile = (selectedFile) => {
     if (!selectedFile) return;
@@ -52,7 +55,17 @@ function App() {
         body: formData,
       });
 
-      const data = await response.json();
+      const text = await response.text();
+
+let data;
+
+try {
+  data = JSON.parse(text);
+} catch {
+  throw new Error(
+    `サーバーからJSON以外の応答が返りました。HTTP ${response.status}: ${text.slice(0, 200)}`
+  );
+}
 
       if (!response.ok) {
         throw new Error(data.error || "翻訳を開始できませんでした。");
