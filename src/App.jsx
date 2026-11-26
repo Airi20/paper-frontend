@@ -21,7 +21,7 @@ function App() {
   const [error, setError] = useState("");
   const [dragging, setDragging] = useState(false);
 
-  const API = import.meta.env.VITE_API_URL || "http://localhost:3001";
+  const API = import.meta.env.VITE_API_URL || "https://paper-backend-ak99.onrender.com/";
 
   const selectFile = (selectedFile) => {
     if (!selectedFile) return;
