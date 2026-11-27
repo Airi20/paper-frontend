@@ -400,4 +400,72 @@ footer {
   .hero h1 {
     font-size: 32px;
   }
+  .legal-section {
+  margin-top: 22px;
+  padding-top: 15px;
+  border-top: 1px solid #e5e7eb;
+  text-align: left;
+  color: #64748b;
+}
+
+.legal-section summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  cursor: pointer;
+  font-size: 12px;
+  list-style: none;
+  transition: color 0.2s;
+}
+
+.legal-section summary:hover {
+  color: #334155;
+}
+
+.legal-section summary::-webkit-details-marker {
+  display: none;
+}
+
+.legal-content {
+  margin-top: 20px;
+  padding: 22px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.legal-content h3 {
+  color: #1e293b;
+  font-size: 16px;
+  margin: 20px 0 10px;
+}
+
+.legal-content h3:first-child {
+  margin-top: 0;
+}
+
+.legal-content h4 {
+  color: #334155;
+  font-size: 13px;
+  margin: 18px 0 5px;
+}
+
+.legal-content p {
+  margin: 5px 0 10px;
+}
+
+.legal-content ul {
+  padding-left: 20px;
+}
+
+.legal-last {
+  margin-top: 25px !important;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
 }
