@@ -276,6 +276,8 @@ function App() {
               Please enter the access password.
               <br />
               パスワード知りたい人は管理人までご連絡ください。
+              <br />
+              テスト段階のため、このサービスは予告なしに変更、メンテ、サ終する可能性があります。あらかじめご了承ください。
             </p>
           </section>
 
