@@ -274,6 +274,8 @@ function App() {
               Your personal research translation tool.
               <br />
               Please enter the access password.
+              <br />
+              パスワード知りたい人は管理人までご連絡ください。
             </p>
           </section>
 
@@ -419,6 +421,7 @@ function App() {
             <div>
               <h2>Document Translation</h2>
               <p>Upload your research paper to get started.</p>
+              
             </div>
 
             <FileText size={25} className="heading-icon" />
